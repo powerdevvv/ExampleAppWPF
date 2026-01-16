@@ -5,6 +5,6 @@ A simple wpf app that show aspects of wpf as - Window Styling, Styles, Animation
 
 Extract contents of ace-editor.zip to bin/Debug/net8.0-windows/editor-xd
 
-# Something
+# Credits
 
 For ace-editor credits goes to github.com/ajaxorg/ace-builds and github.com/ajaxorg/ace
