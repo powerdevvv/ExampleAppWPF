@@ -1,0 +1,31 @@
+﻿<Application x:Class="WpfApp1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ControlTemplate x:Key="TestStyleBT" TargetType="Button">
+            <ControlTemplate.Resources>
+                <SolidColorBrush x:Key="NormalBackground" Color="White"/>
+                <SolidColorBrush x:Key="HoverBackground" Color="#909090"/>
+            </ControlTemplate.Resources>
+
+            <Border x:Name="ButtonBorder" 
+            Background="{StaticResource NormalBackground}" 
+            CornerRadius="5">
+                <ContentPresenter HorizontalAlignment="Center" 
+                         VerticalAlignment="Center"/>
+            </Border>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="ButtonBorder" Property="Background" Value="{StaticResource HoverBackground}"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="ButtonBorder" Property="Background" Value="#999999"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </Application.Resources>
+</Application>
