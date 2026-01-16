@@ -3,7 +3,7 @@ A simple wpf app that show aspects of wpf as - Window Styling, Styles, Animation
 
 #How To Use normaly
 
-Extract contents of ace-editor.zip to bin/Debug/editor-xd
+Extract contents of ace-editor.zip to bin/Debug/net8.0-windows/editor-xd
 
 # Something
 
